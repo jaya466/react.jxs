@@ -1,0 +1,287 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+    color: black;
+    padding: 10px 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    background: transparent;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+    background: transparent;
+
+}
+
+.menu a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    background: transparent;
+
+}
+
+.menu a:hover {
+    text-decoration: underline;
+    background: transparent;
+
+}
+
+.logout button {
+    background-color: brown;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 16px;
+
+}
+
+.logout button:hover {
+    background-color: black;
+    color: aqua;
+}
+
+.maincontainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+footer {
+    background-color: blueviolet;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+    margin: 0px;
+
+}
+
+footer p {
+    background: transparent;
+}
+
+/*dashboatdbanner css*/
+.dashboard-banner {
+    width: 100%;
+    height: 40vh;
+    background: linear-gradient(to right, #1a3c63, #9333ea);
+    display: flex;
+    justify-content: center;
+
+}
+
+.dashboard-banner-content {
+    text-align: center;
+    background: transparent;
+}
+
+.dashboard-banner-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: transparent;
+    color: white;
+}
+
+.dashboard-banner-content p {
+    font-size: 1.2em;
+    background: transparent;
+    color: white;
+}
+
+/* common  titles css*/
+.common-titles {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.common-titles-content {
+    text-align: center;
+    background: transparent;
+}
+
+.common-titles-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    background: transparent;
+    color: #1a3c63;
+}
+
+.common-titles-content p {
+    font-size: 1.2em;
+    background: transparent;
+    color: #1a3c63;
+}
+
+/*your programs card*/
+.our-programs-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0, 1);
+    background-color: white;
+
+}
+
+.our-programs-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.our-programs-card-content {
+    padding: 16px;
+    background: transparent;
+}
+
+.our-programs-card-title {
+    font-size: 20px;
+    margin: 0 0 10px 0;
+    background: transparent;
+}
+
+.our-programs-card-description {
+    font-size: 14px;
+    color: #555;
+    background: transparent;
+}
+
+.our-programs {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    background: transparent;
+}
+
+/* our values css*/
+our-values-card {
+    display: flex;
+    align-self: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    color: #3b5998;
+    font-size: 2em;
+}
+.our-values-card .icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    background: transparent;
+}
+.our-values-card .text{
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    background: transparent;
+}
+.our-values-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+background: transparent;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+
+}
+/* Container holding all cards */
+.courses-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Each course card */
+.our-courses-card {
+  width: 200px;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* Card image */
+.our-courses-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+/* Inner card content */
+.courses-card-mini {
+  padding: 10px;
+}
+
+.our-courses-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.our-courses-description {
+  font-size: 0.9rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.common-year {
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
+}
+
+/* modal-box*/
+.modal-box{
+    background-color: #fff;
+    padding: 20px 30px;
+    border: 9px;
+    max-width: 400;
+    width: 90%;
+    position: relative;
+    box-shadow: 0px 5px 15px rgb(red, green, blue);
+}
+/*title*/
+.modal-title{
+    margin: top 0;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+/*close button (x)*/
+.modal-button{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 22px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: #555;
+}
