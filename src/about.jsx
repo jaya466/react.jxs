@@ -1,15 +1,43 @@
 import "./style.css";
+import { useState, useEffect } from "react";
 
 function About() {
+  const [users, setUsers] = useState([]); // Fix: use array instead of object
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchUsers = async () => {
+      try {
+        const response = await fetch('https://jsonplaceholder.typicode.com/users');
+        const data = await response.json();
+        setUsers(data);
+        setLoading(false); // Fix: turn off loading after data fetched
+      } catch (error) {
+        console.log('Error fetching users:', error);
+        setLoading(false);
+      }
+    };
+    fetchUsers();
+  }, []);
+
   return (
     <main>
       <h1>About Us</h1>
-    
-       <p> Welcome to Shikshayalaya! We are a modern learning platform offering high-quality education in BCA, CSIT, MBA, and more.
-      </p>
-      <p>
-        Our mission is to empower students with skills, knowledge, and practical experience for a better future.
-      </p>
+      {
+        loading ? (
+          <p>Loading...</p>
+        ) : (
+          <ul>
+            {users.map(user => (
+              <li key={user.id}> 
+              name: <strong> {user.name}</strong>
+              email: {user.email}
+
+              </li>
+            ))}
+          </ul>
+        )
+      }
     </main>
   );
 }
