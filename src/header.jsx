@@ -9,7 +9,8 @@ function Header() {
                 <a href='/courses'>Courses</a>
                 <a href='/admission'>Admission</a>
                 <a href="/about">About</a>
-                <a href="contact">Contact</a>
+                <a href="/contact">Contact</a>
+                <a href="/animal">Animal Sound</a>
             </nav>
             <div className="logout">
                 <button>logout</button>
