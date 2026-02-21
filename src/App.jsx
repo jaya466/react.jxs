@@ -8,6 +8,7 @@ import Courses from './courses.jsx';
 import Adimission from './admission.jsx';
 import About from './about.jsx';
 import Contact from './contact.jsx';
+import AbstractClassDemo from './abstract_class_demo.jsx';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/admission" element={<Adimission/>}/>
           <Route path='/about' element={<About/>}/> 
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/abstract' element={<AbstractClassDemo/>}/>
                  </Routes>
         <Footer />
       </div>

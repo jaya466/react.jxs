@@ -10,6 +10,7 @@ function Header() {
                 <a href='/admission'>Admission</a>
                 <a href="/about">About</a>
                 <a href="contact">Contact</a>
+                <a href="/abstract">Abstract Class</a>
             </nav>
             <div className="logout">
                 <button>logout</button>
