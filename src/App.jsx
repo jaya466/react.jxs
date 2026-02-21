@@ -8,6 +8,7 @@ import Courses from './courses.jsx';
 import Adimission from './admission.jsx';
 import About from './about.jsx';
 import Contact from './contact.jsx';
+import AnimalSound from './animal.jsx';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/admission" element={<Adimission/>}/>
           <Route path='/about' element={<About/>}/> 
           <Route path='/contact' element={<Contact/>}/>
+          <Route path='/animal' element={<AnimalSound/>}/>
                  </Routes>
         <Footer />
       </div>
