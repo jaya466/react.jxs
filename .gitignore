@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# C++ compiled binaries
+examples/virtual_inheritance
